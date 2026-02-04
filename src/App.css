@@ -1,8 +1,21 @@
+@font-face {
+  font-family: 'custom';
+  src: url( './components/font/Smilling.ttf');
+}
+
 #root {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  color: #f9cbd6;
+  color: #db4f9b;
+  background-color: rgb( 190, 93, 107, .5 );
+  padding: 3rem;
+  border-radius: 1rem 2rem 2rem 1rem;
+  border-left: #d86487 1rem solid;
+}
+.customFont {
+  font-family: 'custom';
+  font-size: 3rem;
 }
 .imgDiv {
   background-image: url( './components/image/d99d59552e75f370e385388eb22bcd64.jpg');
@@ -31,4 +44,23 @@ img {
 }
 a {
   text-decoration: none;
+}
+input {
+  height: 4ch;
+  width: 55%;
+  border-radius: .3rem .6rem .6rem .1rem;
+  background-color: #672606;
+  border: #d86487 solid;
+}
+input::placeholder {
+  position: relative;
+  left: 2ch;
+  color: #db4f9b;
+}
+
+@media  ( max-width: 600px ) {
+  img {
+  height: 15ch;
+  width: 10ch;
+}
 }

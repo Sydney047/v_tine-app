@@ -33,8 +33,8 @@ function App() {
     <img src={ ballon } alt="This is an image of a ballon" />
     <img src={ bouquet } alt="This is an image of a bouquet of flowers" />
   </div>
-    <h1>So, it is almost <b>Valentines Day😏</b></h1>
-    <label >Enter your name: <input type="text" value={ name } onInput={ handleName } /></label>
+    <h1 className='customFont' id='yesBtn' >So, it is almost <b>Valentines Day😏</b></h1>
+    <input type="text" value={ name } onInput={ handleName } placeholder='Type your name here' />
   </>)
 }
 
